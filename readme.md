@@ -109,6 +109,41 @@ Proyek ini dibuat untuk keperluan pembelajaran dan tugas kuliah. Silakan gunakan
 
 ---
 
+## Daftar Package yang Digunakan
+
+### Backend (Python/pip)
+- **fastapi** : Framework utama backend REST API
+- **uvicorn** : ASGI server untuk menjalankan FastAPI
+- **sqlalchemy** : ORM untuk koneksi dan query database MySQL
+- **pandas** : Analisis dan manipulasi data
+- **PyMySQL** : Driver koneksi MySQL (alternatif: mysql-connector-python)
+- **matplotlib** : (Opsional, untuk visualisasi di backend/utils)
+- **pydantic** : Validasi dan serialisasi data model
+- **starlette** : (Dependency FastAPI)
+- **numpy** : (Dependency pandas/matplotlib)
+- **seaborn** : (Opsional, untuk visualisasi di backend/utils)
+
+### Frontend (npm/Node.js)
+- **react** : Library utama frontend
+- **react-dom** : Rendering React ke DOM
+- **vite** : Build tool dan dev server React
+- **@vitejs/plugin-react** : Plugin React untuk Vite
+- **recharts** : Visualisasi chart di React
+- **eslint** : (Opsional, untuk linting kode)
+- **@eslint/js**, **eslint-plugin-react-hooks**, **eslint-plugin-react-refresh** : (Opsional, untuk linting React)
+- **@types/react**, **@types/react-dom** : (Opsional, untuk type checking)
+- **globals** : (Opsional, untuk linting)
+- **axios** : (Opsional, untuk HTTP request)
+- **react-router-dom** : (Opsional, untuk routing halaman)
+
+---
+
+**Catatan:**  
+- Untuk install semua package di atas, cukup jalankan perintah pada bagian [Instalasi Library](#instalasi-library).
+- Jika ada error dependency, pastikan sudah menjalankan `npm install` dan `pip install` sesuai instruksi.
+
+---
+
 **Kontributor:**  
 - 🙋‍♂️ Dimas  
 - 🤖 Github Copilot  
@@ -116,4 +151,3 @@ Proyek ini dibuat untuk keperluan pembelajaran dan tugas kuliah. Silakan gunakan
 
 ---
 
-❓ Jika ada pertanyaan atau ingin kontribusi, silakan buat issue atau pull request di repository ini.
