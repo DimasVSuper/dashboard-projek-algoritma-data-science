@@ -1,0 +1,99 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8fafc;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-container {
+  max-width: 800px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #0001;
+  padding: 32px 24px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+  color: #1e293b;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: #334155;
+}
+
+label {
+  font-weight: 500;
+  margin-right: 12px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+input[type="number"] {
+  padding: 6px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  margin-left: 6px;
+  margin-right: 16px;
+  width: 90px;
+  font-size: 1rem;
+}
+
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #1d4ed8;
+}
+
+ul, ol {
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+@media (max-width: 900px) {
+  .dashboard-container {
+    max-width: 98vw;
+    padding: 16px 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-container {
+    padding: 8px 2vw;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  input[type="number"] {
+    width: 70px;
+    font-size: 0.95rem;
+  }
+  button {
+    font-size: 0.95rem;
+    padding: 7px 12px;
+  }
+}
