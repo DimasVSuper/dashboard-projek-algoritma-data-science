@@ -28,8 +28,17 @@ plt.close()
 
 # Note 6: Visualisasi data dalam bentuk pie chart
 plt.figure(figsize=(8,8))
-top_kab.plot(kind='pie', autopct='%1.1f%%')
-plt.title('Persentase Kasus Bunuh Diri per Kabupaten/Kota')
+
+def func(pct, allvals):
+    absolute = int(round(pct/100.*sum(allvals)))
+    return f"{pct:.1f}%\n({absolute} kasus)"
+
+top_kab.plot(
+    kind='pie',
+    autopct=lambda pct: func(pct, top_kab.values),
+    startangle=90
+)
+plt.title('Persentase & Jumlah Kasus Bunuh Diri per Kabupaten/Kota')
 plt.ylabel('')
 plt.tight_layout()
 plt.savefig('pie_kabupaten.png')
